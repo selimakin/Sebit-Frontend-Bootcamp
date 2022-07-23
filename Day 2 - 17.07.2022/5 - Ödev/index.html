@@ -45,10 +45,6 @@
         font-size: 24px;
       }
 
-      p span {
-        font-style: italic;
-      }
-
       .imgDiv button {
         background-color: green;
         border: none;
@@ -72,6 +68,19 @@
         height: 70px;
         background-color: pink;
         padding: 0 15px;
+      }
+
+      .banner {
+        background-image: url("banner.jpg");
+        height: 400px;
+        position: relative;
+      }
+
+      .bannerDiv {
+        position: absolute;
+        top: 38px;
+        width: 100%;
+        text-align: center;
       }
 
       .headerLink {
@@ -138,16 +147,8 @@
         <a class="headerLink" href="">İletişim</a>
       </div>
     </div>
-    <div
-      style="
-        background-image: url('banner.jpg');
-        height: 400px;
-        position: relative;
-      "
-    >
-      <div
-        style="position: absolute; top: 38px; width: 100%; text-align: center"
-      >
+    <div class="banner">
+      <div class="bannerDiv">
         <h3>Efsane Banner</h3>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -197,7 +198,7 @@
           <h3>Kasap Burger</h3>
           <p>Bol Malzemeli Efsane Burger</p>
           <div class="priceBtnDiv">
-            <p class="price">45.99 <span>TL</span></p>
+            <p class="price">45.99 <i>TL</i></p>
             <button>Satın Al</button>
           </div>
         </div>
