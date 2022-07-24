@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .imgMainDiv {
+        display: flex;
+        justify-content: center;
+        margin: 30px 0;
+      }
+
+      .imgDiv--2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .imgDiv {
+        border: 1px dashed black;
+        width: 200px;
+        border-radius: 30px;
+        margin-right: 30px;
+      }
+
+      .imgDiv img {
+        width: 100%;
+        border-radius: 30px 30px 0 0;
+      }
+
+      .imgDiv h3 {
+        text-align: center;
+        color: red;
+      }
+
+      .imgDiv p {
+        padding: 0 20px;
+      }
+
+      .price {
+        color: red;
+        text-align: center;
+        font-size: 24px;
+      }
+
+      .imgDiv button {
+        background-color: green;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 30px;
+        color: white;
+        width: 100px;
+      }
+
+      .priceBtnDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        background-color: pink;
+        padding: 0 15px;
+      }
+
+      .banner {
+        background-image: url("banner.jpg");
+        height: 400px;
+        position: relative;
+      }
+
+      .bannerDiv {
+        position: absolute;
+        top: 38px;
+        width: 100%;
+        text-align: center;
+      }
+
+      .headerLink {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        margin-right: 13px;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: coral;
+        color: white;
+        height: 150px;
+        margin-top: 20px;
+      }
+
+      .footerList {
+        list-style: none;
+      }
+
+      .footerList a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+      }
+
+      li:not(:last-child) {
+        margin-bottom: 10px;
+      }
+
+      @media only screen and (max-width: 900px) {
+        .imgDiv--2 {
+          display: block;
+        }
+        .imgDiv {
+          width: 90%;
+          margin: 30px 15px;
+        }
+      }
+
+      @media only screen and (max-width: 600px) {
+        .imgMainDiv {
+          flex-direction: column;
+        }
+
+        .imgDiv {
+          width: 100%;
+          margin: 30px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div>
+        <img src="burgerlogo.png" height="50px" style="border-radius: 5px" />
+      </div>
+      <div>
+        <a class="headerLink" href="">Anasayfa</a>
+        <a class="headerLink" href="">Hakkımızda</a>
+        <a class="headerLink" href="">İletişim</a>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="bannerDiv">
+        <h3>Efsane Banner</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Exercitationem ipsum atque tenetur error commodi, expedita minus.
+          Recusandae ratione maxime ipsam nulla ipsa impedit voluptatum iure
+          eum, magni enim id odio.
+        </p>
+      </div>
+    </div>
+
+    <div class="imgMainDiv">
+      <div class="imgDiv--2">
+        <div class="imgDiv">
+          <img class="efso" src="burger.jpg" />
+          <h3>Kasap Burger</h3>
+          <p>Bol Malzemeli Efsane Burger</p>
+          <div class="priceBtnDiv">
+            <p class="price">45.99 <span>TL</span></p>
+            <button>Satın Al</button>
+          </div>
+        </div>
+
+        <div class="imgDiv">
+          <img class="efso" src="burger.jpg" />
+          <h3>Kasap Burger</h3>
+          <p>Bol Malzemeli Efsane Burger</p>
+          <div class="priceBtnDiv">
+            <p class="price">45.99 <span>TL</span></p>
+            <button>Satın Al</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="imgDiv--2">
+        <div class="imgDiv">
+          <img class="efso" src="burger.jpg" />
+          <h3>Kasap Burger</h3>
+          <p>Bol Malzemeli Efsane Burger</p>
+          <div class="priceBtnDiv">
+            <p class="price">45.99 <span>TL</span></p>
+            <button>Satın Al</button>
+          </div>
+        </div>
+
+        <div class="imgDiv">
+          <img class="efso" src="burger.jpg" />
+          <h3>Kasap Burger</h3>
+          <p>Bol Malzemeli Efsane Burger</p>
+          <div class="priceBtnDiv">
+            <p class="price">45.99 <i>TL</i></p>
+            <button>Satın Al</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="imgMainDiv">
+      <div class="imgDiv--2">
+        <div class="imgDiv">
+          <img class="efso" src="burger.jpg" />
+          <h3>Kasap Burger</h3>
+          <p>Bol Malzemeli Efsane Burger</p>
+          <div class="priceBtnDiv">
+            <p class="price">45.99 <span>TL</span></p>
+            <button>Satın Al</button>
+          </div>
+        </div>
+
+        <div class="imgDiv">
+          <img class="efso" src="burger.jpg" />
+          <h3>Kasap Burger</h3>
+          <p>Bol Malzemeli Efsane Burger</p>
+          <div class="priceBtnDiv">
+            <p class="price">45.99 <span>TL</span></p>
+            <button>Satın Al</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="imgDiv--2">
+        <div class="imgDiv">
+          <img class="efso" src="burger.jpg" />
+          <h3>Kasap Burger</h3>
+          <p>Bol Malzemeli Efsane Burger</p>
+          <div class="priceBtnDiv">
+            <p class="price">45.99 <span>TL</span></p>
+            <button>Satın Al</button>
+          </div>
+        </div>
+
+        <div class="imgDiv">
+          <img class="efso" src="burger.jpg" />
+          <h3>Kasap Burger</h3>
+          <p>Bol Malzemeli Efsane Burger</p>
+          <div class="priceBtnDiv">
+            <p class="price">45.99 <span>TL</span></p>
+            <button>Satın Al</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>
+        <ul class="footerList">
+          <li><a href="">Anasayfa</a></li>
+          <li><a href="">Hakkımızda</a></li>
+          <li><a href="">İletişim</a></li>
+        </ul>
+      </div>
+      <div>
+        <img src="burgerlogo.png" width="120px" style="border-radius: 5px" />
+      </div>
+      <div>
+        <ul class="footerList">
+          <li><a href="">Burgerler</a></li>
+          <li><a href="">Restorantlar</a></li>
+          <li><a href="">Kariyer</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
