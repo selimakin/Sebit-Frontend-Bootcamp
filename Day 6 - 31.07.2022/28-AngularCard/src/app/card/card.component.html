@@ -1,0 +1,12 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>{{ post.title }} </mat-card-title>
+  </mat-card-header>
+  <img mat-card-image [src]="post.imageUrl" [alt]="post.title" />
+  <mat-card-content>
+    <h3>{{ post.username }}</h3>
+    <p>
+      {{ post.content }}
+    </p>
+  </mat-card-content>
+</mat-card>
