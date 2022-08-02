@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row upperPart">
+    <div class="col-xs-12">
+      <app-new-todo (onButtonClicked)="newTodoInput($event)"></app-new-todo>
+    </div>
+  </div>
+  <div class="row" [ngClass]="{ lowerPart: newTodoList.length > 0 }">
+    <div class="col-xs-12">
+      <app-todo-list
+        (clickedInput)="onClickedInput($event)"
+        [enteredInputList]="newTodoList"
+      ></app-todo-list>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,5 @@
+<app-todo-item
+  *ngFor="let input of enteredInputList"
+  [inputItem]="input"
+  (click)="onClickItem(input)"
+></app-todo-item>
