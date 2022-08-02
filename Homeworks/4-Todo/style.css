@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: azure;
+}
+
+header {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.todoForm {
+  display: flex;
+  justify-content: space-between;
+}
+
+input,
+button {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.newTodoInput {
+  flex: 9;
+  background-color: #999;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  color: white;
+}
+
+.newTodoInput::placeholder {
+  color: aliceblue;
+}
+
+.newTodoSubmit {
+  font-size: 1.25rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  padding: 0 10px;
+  color: aliceblue;
+  background-color: #999;
+  transition: all 0.3s;
+}
+
+.newTodoSubmit:hover,
+.newTodoSubmit:active {
+  color: #333;
+  background-color: #bbb;
+}
+
+main {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.todoList {
+  padding: 1rem;
+}
+
+.todoList h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.todos .todo {
+  display: flex;
+  justify-content: space-between;
+  background-color: #999;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.content {
+  width: 100%;
+}
+
+.content .text {
+  color: #fff;
+  font-size: 1.125rem;
+  width: 100%;
+  display: block;
+  transition: 0.4s;
+}
+
+.content .text:not(:read-only) {
+  color: aquamarine;
+}
+
+.todo .actions {
+  display: flex;
+  margin-right: 5px;
+}
+
+.todo .actions button {
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+ion-icon {
+  height: 22px;
+  width: 22px;
+  color: white;
+}
