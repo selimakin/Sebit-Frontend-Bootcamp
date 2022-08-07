@@ -1,0 +1,8 @@
+.flexContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.divContainer {
+  text-align: center;
+}
