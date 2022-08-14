@@ -1,0 +1,27 @@
+{
+  "articles": [
+    {
+      "author": "selim",
+      "title": "başlık",
+      "content": "deneme",
+      "comments": [
+        {
+          "username": "ben",
+          "comment": "güzel olmuş"
+        },
+        {
+          "username": "selim",
+          "comment": "çok güzel"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "author": "akin",
+      "title": "deneme 2",
+      "content": "deneme yazısı",
+      "comments": [],
+      "id": 2
+    }
+  ]
+}

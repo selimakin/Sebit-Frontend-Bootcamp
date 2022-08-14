@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+mat-card {
+  width: 50%;
+}
+
+mat-card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.comments {
+  margin-bottom: 50px;
+}
+
+button {
+  width: 100%;
+}
